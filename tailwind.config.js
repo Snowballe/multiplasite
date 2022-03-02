@@ -1,5 +1,5 @@
 module.exports = {
-  content: [],
+  content: ["./Views/*.php"],
   theme: {
     extend: {},
   },
