@@ -8,7 +8,7 @@
     <title>C ki ?</title>
 </head>
 <body>
-    
+    <h1>C ki ?</h1>
 
 
 <?php
@@ -17,8 +17,14 @@ foreach($users->fetchAll() as $user){
     echo($user['nom']);
     //echo($user['photo']);//TODO
 
-echo("<br/><a href=\"mainMenu.php\">C moa</a>");
-}?>
+echo("<br/><form action=\"index.php\" method=\"post\"><a name=\"\" href=\"mainMenu.php\">C moa</a></form>");
+}
 
+
+
+?>
+
+
+<h5>Tu n'es pas présent dans la liste de potes ? clique <a href="addfriend.php">ici</a> !</h5>
 </body>
 </html>
