@@ -6,5 +6,5 @@ $infoDB=[
     'dbname'=> 'multipla',
 ];
 
-return $infoDB
+return $infoDB;
 ?>
