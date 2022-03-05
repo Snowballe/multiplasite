@@ -14,11 +14,10 @@
 <?php
 
 foreach($users->fetchAll() as $user){
-    echo($user['nom']);
-    //echo($user['photo']);//TODO
-
-echo("<br/><form action=\"index.php\" method=\"post\"><a name=\"\" href=\"mainMenu.php\">C moa</a></form>");
+ 
+echo("<br/><form action=\"index.php\" method=\"post\"><a name=\"me_button\" href=\"mainMenu.php\">".$user['id'].". ".$user['nom']. "</a></form>");
 }
+
 
 
 

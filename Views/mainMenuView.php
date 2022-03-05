@@ -21,5 +21,5 @@
 
 <?php 
 
-
+echo $_SESSION;
 ?>

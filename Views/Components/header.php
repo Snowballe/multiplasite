@@ -18,8 +18,6 @@ require 'Function/database.fn.php';
 </head>
 <body>
     <?php 
-        echo ("<span>Hello ".$_SESSION['nom']." !")
-    
-    
+     echo("<span>Hello ".$_SESSION['nom'] ."!</span>");
     ?>
     

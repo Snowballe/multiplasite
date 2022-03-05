@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 02 mars 2022 à 17:43
+-- Généré le : sam. 05 mars 2022 à 09:21
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -45,10 +45,11 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(255) NOT NULL,
-  `photo` varchar(255) NOT NULL,
+  `profile_picture` varchar(255) NOT NULL,
   `id_texte` int(11) DEFAULT NULL,
   `created_at` varchar(255) NOT NULL,
   `updated_at` varchar(255) DEFAULT NULL,
+  `uploaded_photos` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf32;
 
@@ -56,8 +57,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `nom`, `photo`, `id_texte`, `created_at`, `updated_at`) VALUES
-(1, 'Maël', 'poil', 1, '02/03/22', NULL);
+INSERT INTO `user` (`id`, `nom`, `profile_picture`, `id_texte`, `created_at`, `updated_at`, `uploaded_photos`) VALUES
+(1, 'Maël', 'poil', 1, '02/03/22', NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
